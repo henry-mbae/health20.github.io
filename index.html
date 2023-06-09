@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- js bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- external css -->
+  <link rel="stylesheet" href="vert.css">
+
+  <!-- 1.   owl.carousel.min.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- 2. owl.theme.default.min.css -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- internal css -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .item img {
+      height: 280px;
+    }
+
+    .row {
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- navbar begins -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-transparent">
+    <div class="container">
+      <a class="navbar-brand" href="#">Paula Health Solutions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mypage"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mypage">
+        <ul class="navbar-nav fw-bolder ms-auto mb-2 mb-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="trending.html">Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="popular.html">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="accesories.html">Why Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact us</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <!-- navbar ends -->
+  </nav>
+  <!-- carousel begins-->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner  ">
+      <div class="carousel-item active ">
+        <img src="images/IMG-20230530-WA0008.jpg" class="d-block w-100 " alt="..." class="w-100" min-height="60vh">
+        
+      </div>
+      <div class="carousel-item">
+        <img src="images/biochemistry.jpg" class="d-block w-100" alt="..." class="w-100" height="60vh">
+      </div>
+      <div class="carousel-item">
+        <img src="images/electric bed.jpg" class="d-block w-100" alt="..." class="w-100" height="60vh">
+      </div>
+      <div class="carousel-item">
+        <img src="images/IMG-20230530-WA0010.jpg" class="d-block w-100" alt="..." class="w-100" height="60vh">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <!-- carousel ends -->
+  </div>
+  <!-- card begins -->
+  <div class="container-fluid">
+    <section class="row gy-4">
+      <h2 class="text-center fw-bolder display-6">Products</h2>
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="card">
+            <img src="images/IMG-20230530-WA0010.jpg" alt="" class="card-img-top img-fit">
+            <div class="card-body">
+                <h5 class="card-title">Omron M1</h5>
+                <p class="card-text">KSH 4000</p>
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">more info </button>
+              </div>
+
+            </div>
+ <!-- Button trigger modal -->
+  <!-- Modal -->
+            <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+              tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Omron M1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead">Omron m1 basic, blood pressure monito.AM6200 This monitor is capable of monitoring
+                      parameters: ECG (Electrocardiograph), HR (heart rate), NIBP (non-invasive blood pressure), SpO2,
+                      PR(pulse rate), TEMP(body temperature).
+                      The One-Button-Design make the monitor to be a easy-to-use system,so you can perform the
+                      operations conveniently. Besides, this monitor can be connected with the other smart terminals
+                      such as PC or Android phones.
+                      This monitor integrates the functions of parameter measurement, waveform monitoring, etc. Its
+                      color TFT liquid crystal display is able to show animal parameters and waveform clearlyr</p>
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Add To Cart</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                   
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <div class="card">
+              <img src="images/IMG-20230530-WA0007.jpg" alt="" class="card-img-top img-fit">
+              <div class="card-body">
+                  <h5 class="card-title">Nebuliser Machine</h5>
+                  <p class="card-text">KSH 5000</p>
+                  <div class="text-end">
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">more info </button>
+                </div>
+  
+              </div>
+   <!-- Button trigger modal -->
+    <!-- Modal -->
+              <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Nebuliser Machine</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="lead">Omron m1 basic, blood pressure monito.AM6200 This monitor is capable of monitoring
+                        parameters: ECG (Electrocardiograph), HR (heart rate), NIBP (non-invasive blood pressure), SpO2,
+                        PR(pulse rate), TEMP(body temperature).
+                        The One-Button-Design make the monitor to be a easy-to-use system,so you can perform the
+                        operations conveniently. Besides, this monitor can be connected with the other smart terminals
+                        such as PC or Android phones.
+                        This monitor integrates the functions of parameter measurement, waveform monitoring, etc. Its
+                        color TFT liquid crystal display is able to show animal parameters and waveform clearlyr</p>
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Add To Cart</button>
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                     
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+                <img src="images/IMG-20230530-WA0009.jpg" alt="" class="card-img-top img-fit">
+                <div class="card-body">
+                    <h5 class="card-title">Laryngoscope</h5>
+                    <p class="card-text">KSH 12000</p>
+                    <div class="text-end">
+                      <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop">more info </button>
+                  </div>
+    
+                </div>
+     <!-- Button trigger modal -->
+      <!-- Modal -->
+                <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Laryngoscope</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="lead">Omron m1 basic, blood pressure monito.AM6200 This monitor is capable of monitoring
+                          parameters: ECG (Electrocardiograph), HR (heart rate), NIBP (non-invasive blood pressure), SpO2,
+                          PR(pulse rate), TEMP(body temperature).
+                          The One-Button-Design make the monitor to be a easy-to-use system,so you can perform the
+                          operations conveniently. Besides, this monitor can be connected with the other smart terminals
+                          such as PC or Android phones.
+                          This monitor integrates the functions of parameter measurement, waveform monitoring, etc. Its
+                          color TFT liquid crystal display is able to show animal parameters and waveform clearlyr</p>
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Add To Cart</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                       
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div class="card">
+                  <img src="images/IMG-20230530-WA0002.jpg" alt="" class="card-img-top img-fit">
+                  <div class="card-body">
+                      <h5 class="card-title">Glucometer</h5>
+                      <p class="card-text">KSH 2850</p>
+                      <div class="text-end">
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">more info </button>
+                    </div>
+      
+                  </div>
+       <!-- Button trigger modal -->
+        <!-- Modal -->
+                  <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Glucometer</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p class="lead">Omron m1 basic, blood pressure monito.AM6200 This monitor is capable of monitoring
+                            parameters: ECG (Electrocardiograph), HR (heart rate), NIBP (non-invasive blood pressure), SpO2,
+                            PR(pulse rate), TEMP(body temperature).
+                            The One-Button-Design make the monitor to be a easy-to-use system,so you can perform the
+                            operations conveniently. Besides, this monitor can be connected with the other smart terminals
+                            such as PC or Android phones.
+                            This monitor integrates the functions of parameter measurement, waveform monitoring, etc. Its
+                            color TFT liquid crystal display is able to show animal parameters and waveform clearlyr</p>
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary">Add To Cart</button>
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                         
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="images/IMG-20230530-WA0004.jpg" alt="" class="card-img-top img-fit">
+                    <div class="card-body">
+                        <h5 class="card-title">Litmann Stethoscope</h5>
+                        <p class="card-text">KSH 7500</p>
+                        <div class="text-end">
+                          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">more info </button>
+                      </div>
+        
+                    </div>
+         <!-- Button trigger modal -->
+          <!-- Modal -->
+                    <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Litmann Stethoscope</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p class="lead">Omron m1 basic, blood pressure monito.AM6200 This monitor is capable of monitoring
+                              parameters: ECG (Electrocardiograph), HR (heart rate), NIBP (non-invasive blood pressure), SpO2,
+                              PR(pulse rate), TEMP(body temperature).
+                              The One-Button-Design make the monitor to be a easy-to-use system,so you can perform the
+                              operations conveniently. Besides, this monitor can be connected with the other smart terminals
+                              such as PC or Android phones.
+                              This monitor integrates the functions of parameter measurement, waveform monitoring, etc. Its
+                              color TFT liquid crystal display is able to show animal parameters and waveform clearlyr</p>
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Add To Cart</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                           
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                  <div class="card">
+                      <img src="images/IMG-20230530-WA0005.jpg" alt="" class="card-img-top img-fit">
+                      <div class="card-body">
+                          <h5 class="card-title">Hb Meter Plus Strips</h5>
+                          <p class="card-text">KSH 13500</p>
+                          <div class="text-end">
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">more info </button>
+                        </div>
+          
+                      </div>
+           <!-- Button trigger modal -->
+            <!-- Modal -->
+                      <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">Hb Meter Plus Strips</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p class="lead">Omron m1 basic, blood pressure monito.AM6200 This monitor is capable of monitoring
+                                parameters: ECG (Electrocardiograph), HR (heart rate), NIBP (non-invasive blood pressure), SpO2,
+                                PR(pulse rate), TEMP(body temperature).
+                                The One-Button-Design make the monitor to be a easy-to-use system,so you can perform the
+                                operations conveniently. Besides, this monitor can be connected with the other smart terminals
+                                such as PC or Android phones.
+                                This monitor integrates the functions of parameter measurement, waveform monitoring, etc. Its
+                                color TFT liquid crystal display is able to show animal parameters and waveform clearlyr</p>
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary">Add To Cart</button>
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                             
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="images/IMG-20230530-WA0006.jpg" alt="" class="card-img-top img-fit">
+                        <div class="card-body">
+                            <h5 class="card-title">Omron M2</h5>
+                            <p class="card-text">KSH 6500</p>
+                            <div class="text-end">
+                              <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                          data-bs-target="#staticBackdrop">more info </button>
+                          </div>
+            
+                        </div>
+             <!-- Button trigger modal -->
+              <!-- Modal -->
+                        <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Omron M2</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <p class="lead">Omron m1 basic, blood pressure monito.AM6200 This monitor is capable of monitoring
+                                  parameters: ECG (Electrocardiograph), HR (heart rate), NIBP (non-invasive blood pressure), SpO2,
+                                  PR(pulse rate), TEMP(body temperature).
+                                  The One-Button-Design make the monitor to be a easy-to-use system,so you can perform the
+                                  operations conveniently. Besides, this monitor can be connected with the other smart terminals
+                                  such as PC or Android phones.
+                                  This monitor integrates the functions of parameter measurement, waveform monitoring, etc. Its
+                                  color TFT liquid crystal display is able to show animal parameters and waveform clearlyr</p>
+                                ...
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Add To Cart</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                               
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-8 col-md-6 col-lg-3">
+                      <div class="card">
+                          <img src="images/biochemistry.jpg" alt="" class="card-img-top img-fit">
+                          <div class="card-body">
+                              <h5 class="card-title">Biochemistry Analyzer</h5>
+                              <p class="card-text">KSH 230000</p>
+                              <div class="text-end">
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">more info </button>
+                            </div>
+              
+                          </div>
+               <!-- Button trigger modal -->
+                <!-- Modal -->
+                          <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="staticBackdropLabel">Biochemistry Analyzer</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <p class="lead">Omron m1 basic, blood pressure monito.AM6200 This monitor is capable of monitoring
+                                    parameters: ECG (Electrocardiograph), HR (heart rate), NIBP (non-invasive blood pressure), SpO2,
+                                    PR(pulse rate), TEMP(body temperature).
+                                    The One-Button-Design make the monitor to be a easy-to-use system,so you can perform the
+                                    operations conveniently. Besides, this monitor can be connected with the other smart terminals
+                                    such as PC or Android phones.
+                                    This monitor integrates the functions of parameter measurement, waveform monitoring, etc. Its
+                                    color TFT liquid crystal display is able to show animal parameters and waveform clearlyr</p>
+                                  ...
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary">Add To Cart</button>
+                                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                 
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+    
+  
+
+                  
+  
+
+              
+
+              
+
+      </section>
+  </div>
+  
+
+  <section>
+    <!-- owl-carousel begins -->
+    <div class="container-fluid my-5">
+      <h5 class="text-center fw-bolder display-6 mb-3">categories</h5>
+      <div class="row mt-2">
+        <div class="owl-carousel owl-theme">
+          <div class="item mb-4">
+            <div class="card border=0 shadow">
+              <img src="images/omron.jpg" alt="image" class="card-img-top">
+              <div class="card-body">
+                <h4 class="text-center">owl-carousel</h4>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- items ends -->
+          <div class="item mb-4">
+            <div class="card border=0 shadow">
+              <img src="images/imaging.jpg" alt="image" class="card-img-top">
+              <div class="card-body">
+                <h4 class="text-center">owl-carousel</h4>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- items ends -->
+          <div class="item mb-4">
+            <div class="card border=0 shadow">
+              <img src="images/doc.jpg" alt="image" class="card-img-top">
+              <div class="card-body">
+                <h4 class="text-center">owl-carousel</h4>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- items ends -->
+          <div class="item mb-4">
+            <div class="card border=0 shadow">
+              <img src="images/paulahealth.jpg" alt="image" class="card-img-top">
+              <div class="card-body">
+                <h4 class="text-center">owl-carousel</h4>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- items ends -->
+          <div class="item mb-4">
+            <div class="card border=0 shadow">
+              <img src="images/micro.jpg" alt="image" class="card-img-top">
+              <div class="card-body">
+                <h4 class="text-center">owl-carousel</h4>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- items ends -->
+          <div class="item mb-4">
+            <div class="card border=0 shadow">
+              <img src="images/monitor.jpg" alt="image" class="card-img-top">
+              <div class="card-body">
+                <h4 class="text-center">owl-carousel</h4>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- items ends -->
+          <div class="item mb-4">
+            <div class="card border=0 shadow">
+              <img src="images/electric bed.jpg" alt="image" class="card-img-top">
+              <div class="card-body">
+                <h4 class="text-center">owl-carousel</h4>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- items ends -->
+          <div class="item mb-4">
+            <div class="card border=0 shadow">
+              <img src="images/olympus.jpg" alt="image" class="card-img-top">
+              <div class="card-body">
+                <h4 class="text-center">owl-carousel</h4>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- items ends -->
+          <div class="item mb-4">
+            <div class="card border=0 shadow">
+              <img src="images/biochemistry.jpg" alt="image" class="card-img-top">
+              <div class="card-body">
+                <h4 class="text-center">owl-carousel</h4>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- items ends -->
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- include jquery cdn files -->
+  <!--0. jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- owl.carousel.min.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- javasript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- initialization owl script -->
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>
